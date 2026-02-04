@@ -11,5 +11,6 @@ del student["name"]
 print(student)
 student.clear()
 print(student)
-# student.pop("name")
-# print(student)
+student.pop("name")
+print(student)
+
