@@ -1,0 +1,38 @@
+print("welcoma to the file handling ")
+#READING A FILE
+f=open('myfile.txt','r')
+text=f.read()
+print(text)
+#WRITING A FILE
+f=open('myfile.txt','w')
+f.write("I have no exprience of any Job")
+f.close()
+#APPEND A FILE 
+f=open('my file.txt','a')
+f.write("kunal is a bad boy")
+f.close()
+#READLINES
+
+with open('a.txt','r') as file: # this method use to convert multipal line into one line  
+    lines=file.readlines()
+    print(lines)
+
+with open("a.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:   # this method use to print line without \n
+    print(line.strip())
+
+
+
+with open("b.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print(line.split())
+
+#WRITELINES
+with open('c.txt','w') as f:
+    lines=["Hello\n","my name is pavan kumar\n","i am from baddha wazidpur siyana bulandshahr\n"]
+    f.writelines(lines)
+    print(lines)
