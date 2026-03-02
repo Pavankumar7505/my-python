@@ -19,6 +19,8 @@ class collegestudent(student):#attributes inharit
         
    
 s1=collegestudent("pavan",12,'A',"B.tech","CSE")   
+s2=collegestudent("prashant",15,'B',"Bca","CSE")   
 # print(s1.name,s1.rollnumber,s1.section,s1.course)
 s1.info_p()
+s2.info_p()
 s1.info()
